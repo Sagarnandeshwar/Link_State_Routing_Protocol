@@ -5,12 +5,16 @@ I have implemented a Link State Routing Protocol using Java Socket Programming. 
 ## Socket Programming 
 A socket is the interface between the application layer and the transmission layer. 
 <br>
+![Socket Description](https://github.com/Sagarnandeshwar/Link_State_Routing_COMP535/blob/main/images/socket.png)
+<br>
 When the processes communicate via socket, they usually play two categories of roles, Server and client. 
 In a connection-oriented client-to-server model, the socket on the server process waits for requests from a client. 
 To do this, the server first establishes (binds) an address that clients can use to find the server. 
 When the address is established, the server waits for clients to request a service. 
 The client-to-server data exchange takes place when a client connects to the server through a socket. 
 The server performs the client's request and sends the reply back to the client.
+<br>
+![Server Client Methods](https://github.com/Sagarnandeshwar/Link_State_Routing_COMP535/blob/main/images/server_client.png)
 <br>
 I use Java Socket Programming to build Link State Routing. 
 In addition, I have used a multi-threaded for server to handle concurrent socket requests/messages from the client. 
@@ -39,6 +43,7 @@ Based on LSA entries saved in Link State Database, I built the weighted graph re
 ## RouterStatus:  
 NA -> Not applicable (given during "attach" and before "start")  
 INIT  -> used during router link establishment 
+<br>
 TWO_WAY -> once the two routers are connected 
  
 ## Messages 
@@ -75,6 +80,6 @@ The messages are distinguished by the field of sospfType, where
  
 ## Startup Instruction (from the main folder):  
 To Compile the program, run: mvn compile assembly:single  
-<br> To start a router, run: java -cp target/COMP535-1.0-SNAPSHOT-jar-with-dependencies.jar socs.network.Main conf/router1.conf 
+To start a router, run: java -cp target/COMP535-1.0-SNAPSHOT-jar-with-dependencies.jar socs.network.Main conf/router1.conf 
 <br> (please choose the router’s number from [1,5]) 
 
