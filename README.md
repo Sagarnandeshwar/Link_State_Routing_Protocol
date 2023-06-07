@@ -2,6 +2,8 @@
 I have implemented a Link State Routing Protocol using Java Socket Programming. Addtionally, I have used Apache Maven to build the project. 
 
 ## Link State Routing 
+In Link State Routing, every router maintains its own description of the connectivity of the complete network. As a result, each router can calculate the best next hop for all possible destinations independently.  
+
 ## Socket Programming 
 A socket is the interface between the application layer and the transmission layer. 
 <br>
@@ -21,6 +23,7 @@ In addition, I have used a multi-threaded for server to handle concurrent socket
 
 ## Simulation
 To simulate the real-world network environment, I have to start multiple instances of the program, each of which connects with others via socket. Each program instance represents a router or host in the simulated network space. Correspondingly, the links connecting the routers/hosts and the IP addresses identifying the routers/hosts are simulated by the in-memory data structures. 
+
 Each socket-based program has its own IP address and port, which are the identifiers used to communicate with other processes. For the purpose of this project, I have assigned a "simulated IP address" to each router. This IP address is only used to identify the router program instance network space but is not used to communicate via sockets. I, then, map between this “simulated IP address” and the "Process IP" and "Process Port" to simulate the link state routing protocol.
 
 ## Data Structures in Routers 
