@@ -1,4 +1,4 @@
-# COMP535: Computer Networks Course Project 
+# Link State Routing Protocol
 I have implemented a Link State Routing Protocol using Java Socket Programming. Addtionally, I have used Apache Maven to build the project. 
 
 ## Link State Routing 
